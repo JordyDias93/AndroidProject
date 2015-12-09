@@ -50,7 +50,7 @@ ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterPro
 activity#com.parse.starter.MainActivity
 ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:29:9-37:20
 	android:label
-		ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:31:13-45
+		ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:31:13-34
 	android:name
 		ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:30:13-41
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER

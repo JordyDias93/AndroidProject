@@ -34,7 +34,7 @@
 
         <activity
             android:name="com.parse.starter.MainActivity"
-            android:label="@string/app_name" >
+            android:label="PChat" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
