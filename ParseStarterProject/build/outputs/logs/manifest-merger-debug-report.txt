@@ -36,15 +36,15 @@ MERGED from [com.android.support:support-v4:22.2.0] C:\Users\Dr.Dias\AndroidStud
 	android:name
 		ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:17:9-43
 meta-data#com.parse.APPLICATION_ID
-ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:22:9-24:52
+ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:22:9-24:72
 	android:value
-		ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:24:13-49
+		ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:24:13-69
 	android:name
 		ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:23:13-52
 meta-data#com.parse.CLIENT_KEY
-ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:25:9-27:56
+ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:25:9-27:72
 	android:value
-		ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:27:13-53
+		ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:27:13-69
 	android:name
 		ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:26:13-48
 activity#com.parse.starter.MainActivity

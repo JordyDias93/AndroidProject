@@ -21,10 +21,10 @@
         android:theme="@style/AppTheme" >
         <meta-data
             android:name="com.parse.APPLICATION_ID"
-            android:value="@string/parse_app_id" />
+            android:value="BOj6HrBuhGv5Gyl86CXKFqA0VHnZxjXV8QcwYFmh" />
         <meta-data
             android:name="com.parse.CLIENT_KEY"
-            android:value="@string/parse_client_key" />
+            android:value="z8pOfhelBBmiolT56v9kLH19XEK8cqiPy79hrqFE" />
 
         <activity
             android:name=".MainActivity"
