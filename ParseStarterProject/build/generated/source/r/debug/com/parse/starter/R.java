@@ -1523,7 +1523,26 @@ containing a value of this type.
         public static final int abc_textfield_search_activated_mtrl_alpha=0x7f020038;
         public static final int abc_textfield_search_default_mtrl_alpha=0x7f020039;
         public static final int abc_textfield_search_material=0x7f02003a;
-        public static final int notification_template_icon_bg=0x7f02003b;
+        public static final int actionbar_bg=0x7f02003b;
+        public static final int arrow=0x7f02003c;
+        public static final int back_arrow=0x7f02003d;
+        public static final int chat_bubble_gray=0x7f02003e;
+        public static final int chat_bubble_green=0x7f02003f;
+        public static final int editext_bg_gray=0x7f020040;
+        public static final int edittext_bg=0x7f020041;
+        public static final int green_btn=0x7f020042;
+        public static final int ic_compose=0x7f020043;
+        public static final int ic_launcher=0x7f020044;
+        public static final int ic_offline=0x7f020045;
+        public static final int ic_online=0x7f020046;
+        public static final int ic_pwd=0x7f020047;
+        public static final int ic_send=0x7f020048;
+        public static final int ic_username=0x7f020049;
+        public static final int icon=0x7f02004a;
+        public static final int logo_login=0x7f02004b;
+        public static final int notification_template_icon_bg=0x7f02004e;
+        public static final int user_chat1=0x7f02004c;
+        public static final int user_chat2=0x7f02004d;
     }
     public static final class id {
         public static final int action0=0x7f0c004f;
@@ -1656,18 +1675,20 @@ containing a value of this type.
         public static final int activity_login=0x7f040019;
         public static final int activity_main=0x7f04001a;
         public static final int activity_signup=0x7f04001b;
-        public static final int notification_media_action=0x7f04001c;
-        public static final int notification_media_cancel_action=0x7f04001d;
-        public static final int notification_template_big_media=0x7f04001e;
-        public static final int notification_template_big_media_narrow=0x7f04001f;
-        public static final int notification_template_lines=0x7f040020;
-        public static final int notification_template_media=0x7f040021;
-        public static final int notification_template_part_chronometer=0x7f040022;
-        public static final int notification_template_part_time=0x7f040023;
-        public static final int select_dialog_item_material=0x7f040024;
-        public static final int select_dialog_multichoice_material=0x7f040025;
-        public static final int select_dialog_singlechoice_material=0x7f040026;
-        public static final int support_simple_spinner_dropdown_item=0x7f040027;
+        public static final int chat_item_received=0x7f04001c;
+        public static final int chat_item_send=0x7f04001d;
+        public static final int notification_media_action=0x7f04001e;
+        public static final int notification_media_cancel_action=0x7f04001f;
+        public static final int notification_template_big_media=0x7f040020;
+        public static final int notification_template_big_media_narrow=0x7f040021;
+        public static final int notification_template_lines=0x7f040022;
+        public static final int notification_template_media=0x7f040023;
+        public static final int notification_template_part_chronometer=0x7f040024;
+        public static final int notification_template_part_time=0x7f040025;
+        public static final int select_dialog_item_material=0x7f040026;
+        public static final int select_dialog_multichoice_material=0x7f040027;
+        public static final int select_dialog_singlechoice_material=0x7f040028;
+        public static final int support_simple_spinner_dropdown_item=0x7f040029;
     }
     public static final class menu {
         public static final int menu_main=0x7f0d0000;

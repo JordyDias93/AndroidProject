@@ -15,4 +15,7 @@
 
     <string name="hello_world">Hello World!</string>
     <string name="action_settings">Settings</string>
+    <string name="labelcontact">Contact</string>
+    <string name="test">labelcontact</string>
+    <string name="test2">ToText</string>
 </resources>
