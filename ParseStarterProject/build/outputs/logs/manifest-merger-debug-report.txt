@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:10:1-40:12
+ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:10:1-46:12
 	package
 		ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:11:5-32
 		INJECTED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml
@@ -22,7 +22,7 @@ ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterPro
 	android:name
 		ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:14:22-76
 application
-ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:16:5-38:19
+ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:16:5-44:19
 MERGED from [com.android.support:appcompat-v7:22.2.0] C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:22:5-20
 MERGED from [com.android.support:support-v4:22.2.0] C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\support-v4\22.2.0\AndroidManifest.xml:22:5-20
 	android:label
@@ -63,6 +63,16 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:35:17-77
 	android:name
 		ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:35:27-74
+activity#com.parse.starter.ChatActivity
+ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:38:9-43:20
+	android:screenOrientation
+		ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:41:13-49
+	android:label
+		ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:40:13-41
+	android:windowSoftInputMode
+		ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:42:13-67
+	android:name
+		ADDED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml:39:13-41
 uses-sdk
 INJECTED from C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support:appcompat-v7:22.2.0] C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\build\intermediates\exploded-aar\com.android.support\appcompat-v7\22.2.0\AndroidManifest.xml:20:5-43

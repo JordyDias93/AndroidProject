@@ -201,11 +201,18 @@
     <string name="action_settings">Settings</string>
     <string name="app_name">Parse Starter Project</string>
     <string name="hello_world">Hello World!</string>
+    <string name="labelcontact">Contact</string>
     <string name="parse_app_id">YOUR_APPLICATION_ID</string>
     <string name="parse_client_key">YOUR_CLIENT_KEY</string>
     <!-- From: file:/C:/Users/Dr.Dias/AndroidStudioProjects/AndroidProject/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>
+    <!-- From: file:/C:/Users/Dr.Dias/AndroidStudioProjects/AndroidProject/ParseStarterProject/src/main/res/values/strings.xml -->
+    <eat-comment/>
+    <string name="test">labelcontact</string>
+    <string name="test2">ToText</string>
+    <!-- From: file:/C:/Users/Dr.Dias/AndroidStudioProjects/AndroidProject/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
     <style name="Animation.AppCompat.Dialog" parent="Base.Animation.AppCompat.Dialog"/>
