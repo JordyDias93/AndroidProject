@@ -561,7 +561,7 @@ int layout abc_search_dropdown_item_icons_2line 0x7f040015
 int layout abc_search_view 0x7f040016
 int layout abc_select_dialog_material 0x7f040017
 int layout abc_simple_dropdown_hint 0x7f040018
-int layout activity_login 0x7f040019
+int layout activity_acceuil 0x7f040019
 int layout activity_main 0x7f04001a
 int layout activity_signup 0x7f04001b
 int layout chat_global 0x7f04001c
