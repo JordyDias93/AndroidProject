@@ -27,7 +27,7 @@
             android:value="z8pOfhelBBmiolT56v9kLH19XEK8cqiPy79hrqFE" />
         <activity
             android:name=".AcceuilActivity"
-            android:label="PChat Acceuil" >
+            android:label="PChat" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />

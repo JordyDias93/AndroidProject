@@ -34,7 +34,7 @@
 
         <activity
             android:name="com.parse.starter.AcceuilActivity"
-            android:label="PChat Acceuil" >
+            android:label="PChat" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -48,6 +48,12 @@
         <activity
             android:name="com.parse.starter.MainActivity"
             android:label="PChat" >
+        </activity>
+        <activity
+            android:name="com.parse.starter.ChatActivity"
+            android:label="ChatActivity"
+            android:screenOrientation="portrait"
+            android:windowSoftInputMode="stateHidden|adjustResize" >
         </activity>
     </application>
 

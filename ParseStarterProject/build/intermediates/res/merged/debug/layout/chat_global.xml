@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChatActivity">
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:id="@+id/listView"
+        android:fastScrollEnabled="true"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="-40dp">
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText"
+            android:inputType="text"
+            android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material"
+            android:layout_weight="1" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/button"
+            android:enabled="false"
+            android:background="@drawable/ic_send"
+            android:minHeight="40dp"
+            android:minWidth="40dp" />
+    </LinearLayout>
+
+</LinearLayout><!-- From: file:/C:/Users/Dr.Dias/AndroidStudioProjects/AndroidProject/ParseStarterProject/src/main/res/layout/chat_global.xml -->
