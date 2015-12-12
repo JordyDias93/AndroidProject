@@ -18,18 +18,25 @@ import com.parse.Parse;
 import com.parse.ParseAnalytics;
 import com.parse.ParseUser;
 
+import java.util.ArrayList;
+
 
 public class MainActivity extends ActionBarActivity {
 
-    private static final String TAG = "MainActivity";
+  private static final String TAG = "MainActivity";
+
+  /** The Chat list. */
+  private ArrayList<ParseUser> uList;
+
+  /** The user. */
+  public static ParseUser user;
 
   @Override
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-    ParseAnalytics.trackAppOpenedInBackground(getIntent());
-    ParseUser test = ParseUser.getCurrentUser();
-      Log.v(TAG, test.toString());
+    user = ParseUser.getCurrentUser();
+    Log.v(TAG, user.getObjectId().toString());
   }
 
   @Override
@@ -45,6 +52,11 @@ public class MainActivity extends ActionBarActivity {
     // automatically handle clicks on the Home/Up button, so long
     // as you specify a parent activity in AndroidManifest.xml.
     int id = item.getItemId();
+
+    //noinspection SimplifiableIfStatement
+    if (id == R.id.action_settings) {
+      return true;
+    }
 
     //noinspection SimplifiableIfStatement
     if (id == R.id.action_settings) {

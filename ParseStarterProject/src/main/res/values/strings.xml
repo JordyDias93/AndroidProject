@@ -18,4 +18,5 @@
     <string name="labelcontact">Contact</string>
     <string name="test">labelcontact</string>
     <string name="test2">ToText</string>
+    <string name="testviewtest">TextView</string>
 </resources>

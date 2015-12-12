@@ -4,6 +4,8 @@
     android:layout_height="wrap_content"
     android:drawableRight="@drawable/arrow"
     android:orientation="horizontal"
-    android:text="TextView"
-    android:drawableLeft="@drawable/ic_online"
-    />
+    android:text="Veuillez indiquer vôtre babla ici"
+    android:gravity="left|center"
+    android:height="40dp"
+    android:minHeight="32dp"
+    android:id="@+id/ChatItemText" />

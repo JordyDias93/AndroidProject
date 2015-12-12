@@ -3,13 +3,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical" >
+    android:orientation="vertical"
+    tools:context=".MainActivity">
     <ListView
         android:id="@+id/list"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:dividerHeight="1dp"
-        tools:listitem="@layout/chat_item" >
+        tools:listitem="@layout/chat_item"
+        android:stackFromBottom="false"
+        android:nestedScrollingEnabled="false"
+        android:fastScrollEnabled="true">
     </ListView>
 
 </LinearLayout>
