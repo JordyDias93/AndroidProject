@@ -26,13 +26,14 @@ public class StarterApplication extends Application {
 
     // Add your initialization code here
     Parse.initialize(this);
-
+    ParseUser.enableRevocableSessionInBackground();
+    //ParseUser.enableRevocableSessionInBackground();
     //Penser à rajouter le data user si déjà présent
 
-    ParseUser.enableAutomaticUser();
-    ParseACL defaultACL = new ParseACL();
+    //ParseUser.enableAutomaticUser();
+    //ParseACL defaultACL = new ParseACL();
     // Optionally enable public read access.
     // defaultACL.setPublicReadAccess(true);
-    ParseACL.setDefaultACL(defaultACL, true);
+    // ParseACL.setDefaultACL(defaultACL, true);
   }
 }

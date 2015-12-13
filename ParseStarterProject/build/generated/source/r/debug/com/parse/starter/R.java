@@ -1554,6 +1554,7 @@ containing a value of this type.
     }
     public static final class id {
         public static final int ChatItemText=0x7f0c0062;
+        public static final int OpenNewTabChat=0x7f0c0076;
         public static final int SignUpReal=0x7f0c005e;
         public static final int TConfirmmail=0x7f0c005d;
         public static final int TMail=0x7f0c005b;
@@ -1616,6 +1617,7 @@ containing a value of this type.
         public static final int listMode=0x7f0c0009;
         public static final int listView=0x7f0c005f;
         public static final int list_item=0x7f0c002a;
+        public static final int logout=0x7f0c0078;
         public static final int media_actions=0x7f0c006c;
         public static final int middle=0x7f0c0015;
         public static final int multiply=0x7f0c001e;
@@ -1639,7 +1641,6 @@ containing a value of this type.
         public static final int search_plate=0x7f0c0048;
         public static final int search_src_text=0x7f0c0049;
         public static final int search_voice_btn=0x7f0c004d;
-        public static final int secure_connect_scan=0x7f0c0076;
         public static final int select_dialog_listview=0x7f0c004e;
         public static final int shortcut=0x7f0c0039;
         public static final int showCustom=0x7f0c000f;

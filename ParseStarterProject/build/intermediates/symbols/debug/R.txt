@@ -437,6 +437,7 @@ int drawable notification_template_icon_bg 0x7f020056
 int drawable user_chat1 0x7f020054
 int drawable user_chat2 0x7f020055
 int id ChatItemText 0x7f0c0062
+int id OpenNewTabChat 0x7f0c0076
 int id SignUpReal 0x7f0c005e
 int id TConfirmmail 0x7f0c005d
 int id TMail 0x7f0c005b
@@ -499,6 +500,7 @@ int id list 0x7f0c0055
 int id listMode 0x7f0c0009
 int id listView 0x7f0c005f
 int id list_item 0x7f0c002a
+int id logout 0x7f0c0078
 int id media_actions 0x7f0c006c
 int id middle 0x7f0c0015
 int id multiply 0x7f0c001e
@@ -522,7 +524,6 @@ int id search_mag_icon 0x7f0c0047
 int id search_plate 0x7f0c0048
 int id search_src_text 0x7f0c0049
 int id search_voice_btn 0x7f0c004d
-int id secure_connect_scan 0x7f0c0076
 int id select_dialog_listview 0x7f0c004e
 int id shortcut 0x7f0c0039
 int id showCustom 0x7f0c000f
