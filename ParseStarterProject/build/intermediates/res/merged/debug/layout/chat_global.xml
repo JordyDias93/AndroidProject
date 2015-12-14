@@ -9,7 +9,8 @@
 
     <ListView
         android:layout_width="wrap_content"
-        android:id="@+id/listView"
+        android:id="@+id/List_Single_Message"
+        tools:listitem="@layout/chat_item_rcv"
         android:fastScrollEnabled="true"
         android:layout_weight="1"
         android:layout_height="0dp" />
@@ -23,7 +24,7 @@
         <EditText
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/editText"
+            android:id="@+id/messagetext"
             android:inputType="text"
             android:textSize="@dimen/abc_action_bar_icon_vertical_padding_material"
             android:layout_weight="1" />
@@ -31,8 +32,7 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/button"
-            android:enabled="false"
+            android:id="@+id/button_send"
             android:background="@drawable/ic_send"
             android:minHeight="40dp"
             android:minWidth="40dp" />

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:drawableRight="@drawable/arrow"
+    android:orientation="horizontal"
+    android:text="Veuillez indiquer vôtre babla ici"
+    android:gravity="left|center"
+    android:height="40dp"
+    android:minHeight="32dp"
+    android:id="@+id/ChatItemText" />
+<!-- From: file:/C:/Users/Dr.Dias/AndroidStudioProjects/AndroidProject/ParseStarterProject/src/main/res/layout/chat_item.xml -->
