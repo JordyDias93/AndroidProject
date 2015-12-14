@@ -1,6 +1,7 @@
 package com.parse.starter;
 
 import android.app.Activity;
+import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
@@ -26,6 +27,7 @@ public class AcceuilActivity  extends Activity {
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         if(ParseUser.getCurrentUser()!=null)
         {
             Intent intent = new Intent(AcceuilActivity.this, MainActivity.class);
@@ -41,13 +43,16 @@ public class AcceuilActivity  extends Activity {
 
             buttonlogin.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
+                    final ProgressDialog dia = ProgressDialog.show(AcceuilActivity.this, null,"Loading");
                     String LOGIN = login.getText().toString().replaceAll("\\s+$", "");
                     String PASSWORD = pass.getText().toString().replaceAll("\\s+$", "");
                     login.setText("");
                     pass.setText("");
+
                     ParseUser.logInInBackground(LOGIN, PASSWORD, new LogInCallback() {
                         @Override
                         public void done(ParseUser user, com.parse.ParseException e) {
+                            dia.dismiss();
                             if (user != null) {
                                 // Hooray! The user is logged in.
                                 Log.v(TAG, "sucess login");
