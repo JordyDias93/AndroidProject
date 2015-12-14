@@ -3,15 +3,15 @@
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:baselineAligned="false"
-    android:addStatesFromChildren="false">
+    android:addStatesFromChildren="false"
+    android:gravity="right">
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/chat_bubble_green"
-        android:baselineAligned="false"
-        android:layout_gravity="right">
+        android:baselineAligned="false">
 
         <TextView
             android:layout_width="wrap_content"

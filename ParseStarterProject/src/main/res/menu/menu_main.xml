@@ -15,11 +15,6 @@
         android:icon="@drawable/ic_compose"
         android:title="Compose a New Message"
         app:showAsAction="ifRoom"/>
-
-    <item android:id="@+id/action_settings"
-          android:title="@string/action_settings"
-          android:orderInCategory="100"
-          app:showAsAction="never"/>
     <item android:id="@+id/logout"
         android:title="logout"
         android:orderInCategory="100"

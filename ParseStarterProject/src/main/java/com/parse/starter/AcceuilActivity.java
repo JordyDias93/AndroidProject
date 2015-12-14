@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.parse.LogInCallback;
 import com.parse.Parse;
@@ -40,7 +41,11 @@ public class AcceuilActivity  extends Activity {
 
             buttonlogin.setOnClickListener(new View.OnClickListener() {
                 public void onClick(View v) {
-                    ParseUser.logInInBackground(login.getText().toString(), pass.getText().toString(), new LogInCallback() {
+                    String LOGIN = login.getText().toString().replaceAll("\\s+$", "");
+                    String PASSWORD = pass.getText().toString().replaceAll("\\s+$", "");
+                    login.setText("");
+                    pass.setText("");
+                    ParseUser.logInInBackground(LOGIN, PASSWORD, new LogInCallback() {
                         @Override
                         public void done(ParseUser user, com.parse.ParseException e) {
                             if (user != null) {
@@ -50,8 +55,9 @@ public class AcceuilActivity  extends Activity {
                                 startActivity(intent);
                             } else {
                                 // Signup failed. Look at the ParseException to see what happened.
-                                Log.v(TAG, "Fail login");
-                                Log.v(TAG, e.toString());
+                                Toast.makeText(AcceuilActivity.this,
+                                        e.toString(),
+                                        Toast.LENGTH_SHORT).show();
                             }
                         }
                     });

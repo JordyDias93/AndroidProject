@@ -3,11 +3,8 @@ package com.parse.starter;
 /**
  * Created by Dr.Dias on 10/12/2015.
  *
- *
- * Login/signup
- * créer conversation
- * add contact
- * recherche contact
+ * Affichage profil
+ * Selection conversation
  * ajout photo
  *
  */

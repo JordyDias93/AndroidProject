@@ -9,19 +9,27 @@
 package com.parse.starter;
 
 import android.app.AlertDialog;
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.text.InputType;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.BaseAdapter;
 import android.widget.EditText;
+import android.widget.ListView;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import com.parse.FindCallback;
 import com.parse.ParseException;
+import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
 
@@ -36,7 +44,8 @@ public class MainActivity extends AppCompatActivity {
   /**
    * The Chat list.
    */
-  private ArrayList<ParseUser> uList;
+  private ArrayList<ParseUser> Contact_list;
+  private ArrayList<String> String_buffer_list;
   public static ParseUser user2;
 
   /**
@@ -57,6 +66,15 @@ public class MainActivity extends AppCompatActivity {
     // Inflate the menu; this adds items to the action bar if it is present.
     getMenuInflater().inflate(R.menu.menu_main, menu);
     return true;
+  }
+
+  @Override
+  protected void onResume()
+  {
+    super.onResume();
+    Log.v(TAG, "test resume");
+    loadUserList();
+
   }
 
   public void GoSearch()
@@ -106,22 +124,127 @@ public class MainActivity extends AppCompatActivity {
     //noinspection SimplifiableIfStatement
     if (id == R.id.OpenNewTabChat) {
       GoSearch();
-      Log.v(TAG, "bbbb");
       return true;
     }
     if (id == R.id.logout) {
       ParseUser.logOut();
       Intent intent = new Intent(MainActivity.this, AcceuilActivity.class);
+      intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
       startActivity(intent);
       return true;
     }
 
-    //noinspection SimplifiableIfStatement
-    if (id == R.id.action_settings) {
-      return true;
+    return super.onOptionsItemSelected(item);
+  }
+
+  private void loadUserList()
+  {
+    final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
+
+    final ProgressDialog dia = ProgressDialog.show(this, null,
+            "Loading");
+
+    ParseQuery<ParseObject> q = ParseQuery.getQuery("Chat");
+    q.whereContains("Sender", user.getUsername());
+    ParseQuery<ParseObject> q2 = ParseQuery.getQuery("Chat");
+    q2.whereContains("Receiver", user.getUsername());
+
+    List<ParseQuery<ParseObject>> queries = new ArrayList<>();
+    queries.add(q);
+    queries.add(q2);
+
+    ParseQuery<ParseObject> mainQuery = ParseQuery.or(queries);
+    mainQuery.orderByAscending("createdAt");
+    mainQuery.findInBackground(new FindCallback<ParseObject>() {
+      @Override
+      public void done(List<ParseObject> objects, ParseException e) {
+        dia.dismiss();
+        AlertDialog alert;
+        alert = alertDialogBuilder.create();
+        if (objects != null) {
+          String_buffer_list = new ArrayList<>();
+          Log.v(TAG, "value first request " + user.getUsername()+ "test");
+          for (int a = 0; a < objects.size(); a++) {
+            ParseObject po = objects.get(a);
+            if (!String_buffer_list.contains(po.getString("Sender"))) {
+              String_buffer_list.add(po.getString("Sender"));
+            } else if (!String_buffer_list.contains(po.getString("Receiver"))) {
+              String_buffer_list.add(po.getString("Receiver"));
+            }
+          }
+        } else {
+          alert.show();
+          e.printStackTrace();
+        }
+        String_buffer_list.remove(user.getUsername());
+        Log.v(TAG, String.valueOf(String_buffer_list));
+        ParseUser.getQuery().whereContainedIn("username", String_buffer_list)
+                .findInBackground(new FindCallback<ParseUser>() {
+
+                  @Override
+                  public void done(List<ParseUser> li, ParseException e) {
+                    dia.dismiss();
+                    AlertDialog alert;
+                    alert = alertDialogBuilder.create();
+                    if (li != null) {
+                      if (li.size() == 0)
+                        Toast.makeText(MainActivity.this,
+                                "User_Not_Found",
+                                Toast.LENGTH_SHORT).show();
+
+                      Contact_list = new ArrayList<>(li);
+                      ListView list = (ListView) findViewById(R.id.list);
+                      list.setAdapter(new HistorisationChatList());
+                      list.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+                        @Override
+                        public void onItemClick(AdapterView<?> arg0,
+                                                View arg1, int pos, long arg3) {
+                          startActivity(new Intent(MainActivity.this,
+                                  ChatActivity.class).putExtra(
+                                  Const.USER_DATA, Contact_list.get(pos)
+                                          .getUsername()));
+                        }
+                      });
+                    } else {
+                      alert.show();
+                      e.printStackTrace();
+                    }
+                  }
+                });
+      }
+    });
+
+  }
+
+  private class HistorisationChatList extends BaseAdapter
+  {
+
+    @Override
+    public int getCount() {
+      return Contact_list.size();
     }
 
-    return super.onOptionsItemSelected(item);
+    @Override
+    public ParseUser getItem(int position) {
+      return Contact_list.get(position);
+    }
+
+    @Override
+    public long getItemId(int position) {
+      return 0;
+    }
+
+    @Override
+    public View getView(int position, View convertView, ViewGroup parent) {
+      if (convertView == null)
+        convertView = getLayoutInflater().inflate(R.layout.chat_item, null);
+
+      ParseUser c = getItem(position);
+      TextView lbl = (TextView) convertView;
+      lbl.setText(c.getUsername());
+      return convertView;
+    }
   }
 
 }

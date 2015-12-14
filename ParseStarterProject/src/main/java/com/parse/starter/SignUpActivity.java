@@ -7,6 +7,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
@@ -31,24 +32,36 @@ public class SignUpActivity extends Activity {
         final EditText login = (EditText) findViewById(R.id.TUsername);
         final EditText pass = (EditText) findViewById(R.id.TPassword);
         final EditText mail = (EditText) findViewById(R.id.TMail);
+        final EditText tconfirmmail = (EditText) findViewById(R.id.TConfirmmail);
 
         SignUpReal.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
-                user.setUsername(login.getText().toString());
-                user.setPassword(pass.getText().toString());
-                user.setEmail(mail.getText().toString());
-
-                user.signUpInBackground(new SignUpCallback() {
-                    @Override
-                    public void done(com.parse.ParseException e) {
-                        if (e == null) {
-                            Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
-                            startActivity(intent);
-                        } else {
-                            Log.v(TAG,e.toString());
+                String LOGIN = login.getText().toString().replaceAll("\\s+$", "");
+                String PASSWORD = pass.getText().toString().replaceAll("\\s+$", "");
+                String MAIL = mail.getText().toString().replaceAll("\\s+$", "");
+                String MAIL2 = tconfirmmail.getText().toString().replaceAll("\\s+$", "");
+                user.setUsername(LOGIN);
+                user.setPassword(PASSWORD);
+                user.setEmail(MAIL);
+                if(MAIL.equals(MAIL2)) {
+                    user.signUpInBackground(new SignUpCallback() {
+                        @Override
+                        public void done(com.parse.ParseException e) {
+                            if (e == null) {
+                                Intent intent = new Intent(SignUpActivity.this, MainActivity.class);
+                                startActivity(intent);
+                            } else {
+                                Log.v(TAG, e.toString());
+                            }
                         }
-                    }
-                });
+                    });
+                }
+                else
+                {
+                    Toast.makeText(SignUpActivity.this,
+                            "Mail non identique",
+                            Toast.LENGTH_SHORT).show();
+                }
             }
         });
     }
