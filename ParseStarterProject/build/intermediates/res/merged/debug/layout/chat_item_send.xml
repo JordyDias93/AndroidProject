@@ -26,7 +26,8 @@
             android:layout_height="wrap_content"
             android:text="ToText"
             android:id="@+id/TextMessage"
-            android:layout_marginLeft="@dimen/abc_action_bar_overflow_padding_start_material" />
+            android:layout_marginLeft="@dimen/abc_action_bar_overflow_padding_start_material"
+            android:maxWidth="150dp" />
     </LinearLayout>
 
     <TextView
