@@ -44,22 +44,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2ca6594e-099c-4912-bc44-9b729b205e6b" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/res/merged/debug/drawable-xhdpi/graylightbubble2.png" />
-      <change type="DELETED" beforePath="C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\build\intermediates\res\merged\debug\drawable-mdpi-v11\mynotif.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\build\intermediates\res\merged\debug\drawable-xxhdpi-v11\mynotif.png" afterPath="" />
-      <change type="MOVED" beforePath="C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\build\intermediates\classes\debug\com\parse\starter\Const.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/AndroidProject/Const.class" />
-      <change type="MOVED" beforePath="C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\build\intermediates\classes\debug\com\parse\starter\Single_Message.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/AndroidProject/Single_Message.class" />
-      <change type="MOVED" beforePath="C:\Users\Dr.Dias\AndroidStudioProjects\AndroidProject\ParseStarterProject\build\intermediates\pre-dexed\debug\support-annotations-22.2.0-4dafd70ba8de90e9d61cb286dfca969ec755e10f.jar" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/pre-dexed/debug/support-annotations-23.1.1-00b5d7039933a1b133399ecda6ad29c58c7112d8.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/AndroidProject/AcceuilActivity$2$1.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/AndroidProject/AcceuilActivity$2$1.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/AndroidProject/AcceuilActivity.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/AndroidProject/AcceuilActivity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/starter/R$id.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/starter/R$id.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/starter/R$string.class" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/classes/debug/com/parse/starter/R$string.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/cache.properties.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.4/taskArtifacts/taskArtifacts.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/local.properties" afterPath="$PROJECT_DIR$/local.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <list id="176918c4-8d78-4062-b679-2791d0a3bb72" name="Failed commit: Default" comment="Ajout :&#10;                         -Divers corrections">
@@ -2861,7 +2845,13 @@
       <option name="project" value="LOCAL" />
       <updated>1450269164923</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Ajout :&#10;                         -Divers corrections">
+      <created>1450299506905</created>
+      <option name="number" value="00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1450299506905</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
