@@ -23,7 +23,7 @@ import com.parse.starter.R;
  * Created by Dr.Dias on 10/12/2015.
  */
 public class AcceuilActivity  extends Activity {
-    private static final String TAG = "Acceuil_Activity";
+    private static final String TAG = "AcceuilActivity";
     Button buttonlogin;
     Button buttonsignup;
 
