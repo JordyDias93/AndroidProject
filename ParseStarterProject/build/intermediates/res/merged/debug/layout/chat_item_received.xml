@@ -9,7 +9,7 @@
         android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/graylightbubble">
+        android:background="@drawable/graylightbubble2">
 
         <TextView
             android:layout_width="wrap_content"
@@ -25,7 +25,8 @@
             android:text="ToText"
             android:id="@+id/TextMessage"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="2dp" />
+            android:layout_marginTop="2dp"
+            android:maxWidth="150dp" />
     </LinearLayout>
 
     <TextView

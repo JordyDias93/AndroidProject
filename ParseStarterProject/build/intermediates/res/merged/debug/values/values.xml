@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- From: file:/C:/Users/Dr.Dias/AndroidStudioProjects/AndroidProject/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Dr.Dias/AndroidStudioProjects/AndroidProject/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <attr format="reference" name="drawerArrowStyle"/>
     <attr format="dimension" name="height"/>
@@ -153,7 +153,7 @@
     <eat-comment/>
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
-    <!-- From: file:/C:/Users/Dr.Dias/AndroidStudioProjects/AndroidProject/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Dr.Dias/AndroidStudioProjects/AndroidProject/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <item name="dialog_fixed_height_major" type="dimen">80%</item>
     <item name="dialog_fixed_height_minor" type="dimen">100%</item>
@@ -198,13 +198,24 @@
     <string name="abc_toolbar_collapse_description">Collapse</string>
     <!-- From: file:/C:/Users/Dr.Dias/AndroidStudioProjects/AndroidProject/ParseStarterProject/src/main/res/values/strings.xml -->
     <eat-comment/>
+    <string name="action_reply">Reply</string>
     <string name="action_settings">Settings</string>
+    <string name="action_share">Share</string>
     <string name="app_name">Parse Starter Project</string>
     <string name="hello_world">Hello World!</string>
     <string name="labelcontact">Contact</string>
+    <string name="new_message_notification_placeholder_text_template">You said %1$s and lorem ipsum
+        dolor sit amet, consectetur adipiscing elit. Etiam non enim magna. Morbi dictum, velit vel
+        semper venenatis, magna odio volutpat velit, at ullamcorper nulla lacus sed turpis.
+        Pellentesque vitae metus elit, nec tincidunt tellus. Integer sed nisl sem, ullamcorper
+        ornare lacus. Duis ac mauris sed massa congue volutpat. Donec sed erat sit amet turpis
+        viverra rhoncus sit amet nec magna. Donec lacinia ligula at libero volutpat volutpat nec nec
+        tortor.
+    </string>
+    <string name="new_message_notification_title_template">New message: %1$s</string>
     <string name="parse_app_id">YOUR_APPLICATION_ID</string>
     <string name="parse_client_key">YOUR_CLIENT_KEY</string>
-    <!-- From: file:/C:/Users/Dr.Dias/AndroidStudioProjects/AndroidProject/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Dr.Dias/AndroidStudioProjects/AndroidProject/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <string name="status_bar_notification_info_overflow">999+</string>
     <!-- From: file:/C:/Users/Dr.Dias/AndroidStudioProjects/AndroidProject/ParseStarterProject/src/main/res/values/strings.xml -->
@@ -212,7 +223,7 @@
     <string name="test">labelcontact</string>
     <string name="test2">ToText</string>
     <string name="testviewtest">TextView</string>
-    <!-- From: file:/C:/Users/Dr.Dias/AndroidStudioProjects/AndroidProject/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Dr.Dias/AndroidStudioProjects/AndroidProject/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <style name="AlertDialog.AppCompat" parent="Base.AlertDialog.AppCompat"/>
     <style name="AlertDialog.AppCompat.Light" parent="Base.AlertDialog.AppCompat.Light"/>
@@ -223,7 +234,7 @@
     <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Customize your theme here. -->
     </style>
-    <!-- From: file:/C:/Users/Dr.Dias/AndroidStudioProjects/AndroidProject/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.0/res/values/values.xml -->
+    <!-- From: file:/C:/Users/Dr.Dias/AndroidStudioProjects/AndroidProject/ParseStarterProject/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.2.1/res/values/values.xml -->
     <eat-comment/>
     <style name="Base.AlertDialog.AppCompat" parent="android:Widget">
         <item name="android:layout">@layout/abc_alert_dialog_material</item>
@@ -456,7 +467,7 @@
         <item name="colorControlNormal">?android:attr/textColorPrimary</item>
         <item name="searchViewStyle">@style/Widget.AppCompat.SearchView.ActionBar</item>
     </style>
-    <style name="Base.ThemeOverlay.AppCompat.Dark">
+    <style name="Base.ThemeOverlay.AppCompat.Dark" parent="Platform.ThemeOverlay.AppCompat.Dark">
         <item name="android:windowBackground">@color/background_material_dark</item>
         <item name="android:colorForeground">@color/bright_foreground_material_dark</item>
         <item name="android:colorForegroundInverse">@color/bright_foreground_material_light</item>
@@ -1407,8 +1418,7 @@
         <item name="color">?attr/colorControlNormal</item>
     </style>
     <style name="Widget.AppCompat.DropDownItem.Spinner" parent="RtlOverlay.Widget.AppCompat.Search.DropDown.Text"/>
-    <style name="Widget.AppCompat.EditText" parent="Base.Widget.AppCompat.EditText">
-    </style>
+    <style name="Widget.AppCompat.EditText" parent="Base.Widget.AppCompat.EditText"/>
     <style name="Widget.AppCompat.Light.ActionBar" parent="Base.Widget.AppCompat.Light.ActionBar">
     </style>
     <style name="Widget.AppCompat.Light.ActionBar.Solid" parent="Base.Widget.AppCompat.Light.ActionBar.Solid">
