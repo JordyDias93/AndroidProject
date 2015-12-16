@@ -591,11 +591,6 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/res/merged/debug/values-zu/values-zu.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/res/merged/debug/values-zu/values-zu.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/res/merged/debug/values/values.xml" afterPath="$PROJECT_DIR$/ParseStarterProject/build/intermediates/res/merged/debug/values/values.xml" />
     </list>
-    <list id="33f7dbf6-2c46-4753-ae75-d9debd279dcb" name="Failed commit: Failed commit: Default" comment="Ajout :&#10;                         -Divers corrections">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/drawable-nodpi/example_picture.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/drawable-xhdpi/graylightbubble2.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParseStarterProject/src/main/res/drawable-xhdpi/graylightbubble.png" afterPath="$PROJECT_DIR$/ParseStarterProject/src/main/res/drawable-xhdpi/graylightbubble.png" />
-    </list>
     <ignored path="AndroidProject.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -2847,7 +2842,25 @@
       <option name="project" value="LOCAL" />
       <updated>1450269013795</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="Ajout :&#10;                         -Divers corrections">
+      <created>1450269102188</created>
+      <option name="number" value="00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1450269102188</updated>
+    </task>
+    <task id="LOCAL-00022" summary="Ajout :&#10;                         -Divers corrections">
+      <created>1450269113252</created>
+      <option name="number" value="00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1450269113252</updated>
+    </task>
+    <task id="LOCAL-00023" summary="Ajout :&#10;                         -Divers corrections">
+      <created>1450269146666</created>
+      <option name="number" value="00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1450269146666</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TodoView" selected-index="4">
