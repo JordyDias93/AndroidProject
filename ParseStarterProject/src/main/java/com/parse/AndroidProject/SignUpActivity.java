@@ -1,4 +1,4 @@
-package com.parse.starter;
+package com.parse.AndroidProject;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -11,8 +11,7 @@ import android.widget.Toast;
 
 import com.parse.ParseUser;
 import com.parse.SignUpCallback;
-
-import java.text.ParseException;
+import com.parse.starter.R;
 
 /**
  * Created by Dr.Dias on 09/12/2015.
