@@ -1,9 +1,9 @@
-package com.parse.starter;
+package com.parse.AndroidProject;
 
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v4.app.FragmentActivity;
 
+import android.support.v4.app.NotificationCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.text.format.DateUtils;
 import android.util.Log;
@@ -23,6 +23,7 @@ import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
 import com.parse.SaveCallback;
+import com.parse.starter.R;
 
 import java.util.ArrayList;
 import java.util.Date;
@@ -36,7 +37,6 @@ public class ChatActivity extends AppCompatActivity {
     private ArrayList<Single_Message> Conversation;
     private static final String TAG = "ChatActivity";
     private String user_to_send_username="";
-    private Date DernierMessageDate;
     HistorisationChat Historique;
     /** The handler. */
     private static Handler handler;
@@ -89,22 +89,22 @@ public class ChatActivity extends AppCompatActivity {
     protected void onPause()
     {
         super.onPause();
-        isRunning = false;
+        loadConversation();
     }
 
     private void loadConversation() {
         ParseQuery<ParseObject> q = ParseQuery.getQuery("Chat");
         if (Conversation.size() == 0) {
-            Log.v(TAG, "EVERYTHING IS AWESOME");
+            Log.v(TAG, "Load EVERYTHING");
             ArrayList<String> al = new ArrayList<String>();
             al.add(user_to_send_username);
             al.add(ParseUser.getCurrentUser().getUsername().toString());
             q.whereContainedIn("Sender", al);
             q.whereContainedIn("Receiver", al);
         } else {
-            Log.v(TAG, "IM BATMAN");
-            if (DernierMessageDate != null)
-            q.whereGreaterThan("createdAt", DernierMessageDate);
+            Log.v(TAG, "Load New message");
+            if (((StarterApplication)this.getApplication()).DernierMessageDate != null)
+            q.whereGreaterThan("createdAt", ((StarterApplication)this.getApplication()).DernierMessageDate);
             q.whereEqualTo("Sender", user_to_send_username);
             q.whereEqualTo("Receiver", ParseUser.getCurrentUser().getUsername().toString());
         }
@@ -124,12 +124,17 @@ public class ChatActivity extends AppCompatActivity {
                         Single_Message SM = new Single_Message(po
                                 .getString("Message"), po.getCreatedAt(), po
                                 .getString("Sender"));
-                        Log.v(TAG, "New Sender "+  po.getString("Sender"));
+                        Log.v(TAG, "New Sender " + po.getString("Sender"));
                         Conversation.add(SM);
-                        if (DernierMessageDate == null
-                                || DernierMessageDate.before(SM.date)) {
-                            DernierMessageDate = SM.date;
+                        if (((StarterApplication)(ChatActivity.this).getApplication()).DernierMessageDate == null
+                                || ((StarterApplication)(ChatActivity.this).getApplication()).DernierMessageDate.before(SM.date)) {
+                            ((StarterApplication)(ChatActivity.this).getApplication()).DernierMessageDate = SM.date;
                         }
+                        NotificationCompat.Builder notification =new NotificationCompat.Builder(ChatActivity.this);
+                        notification.setTicker("New Notification!!!!");
+                        notification.setWhen(System.currentTimeMillis());
+                        notification.setContentTitle("New Message from " + SM.sender);
+                        notification.setContentText(SM.msg);
                         Historique.notifyDataSetChanged();
                     }
                 }
@@ -221,7 +226,7 @@ public class ChatActivity extends AppCompatActivity {
 
             TextView lbl = (TextView) convertView.findViewById(R.id.TextContact);
             if (ParseUser.getCurrentUser().getUsername()!=user_to_send_username) {
-                lbl.setText("Moi");
+                lbl.setText("");
             }
             else {
                 lbl.setText(user_to_send_username);

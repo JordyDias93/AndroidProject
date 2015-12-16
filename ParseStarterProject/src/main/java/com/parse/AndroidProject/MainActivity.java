@@ -6,7 +6,7 @@
  * LICENSE file in the root directory of this source tree. An additional grant
  * of patent rights can be found in the PATENTS file in the same directory.
  */
-package com.parse.starter;
+package com.parse.AndroidProject;
 
 import android.app.AlertDialog;
 import android.app.ProgressDialog;
@@ -32,6 +32,7 @@ import com.parse.ParseException;
 import com.parse.ParseObject;
 import com.parse.ParseQuery;
 import com.parse.ParseUser;
+import com.parse.starter.R;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -47,6 +48,7 @@ public class MainActivity extends AppCompatActivity {
   private ArrayList<ParseUser> Contact_list;
   private ArrayList<String> String_buffer_list;
   public static ParseUser user2;
+  Intent intentS = null;
 
   /**
    * The user.
@@ -73,9 +75,28 @@ public class MainActivity extends AppCompatActivity {
   {
     super.onResume();
     Log.v(TAG, "test resume");
+    if(intentS!=null)
+    stopService(intentS);
+    Log.v(TAG, "test resume");
     loadUserList();
-
   }
+
+  protected void onPause()
+  {
+    super.onPause();
+    Log.v(TAG, "test pause");
+    intentS = new Intent(this, ServiceNotif.class);
+    startService(intentS);
+  }
+
+  protected void onDestroy()
+  {
+    super.onPause();
+    Log.v(TAG, "test pause");
+    stopService(intentS);
+  }
+
+
 
   public void GoSearch()
   {
@@ -130,6 +151,8 @@ public class MainActivity extends AppCompatActivity {
       ParseUser.logOut();
       Intent intent = new Intent(MainActivity.this, AcceuilActivity.class);
       intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TOP);
+      if(intentS!=null)
+        stopService(intentS);
       startActivity(intent);
       return true;
     }
@@ -139,6 +162,8 @@ public class MainActivity extends AppCompatActivity {
 
   private void loadUserList()
   {
+
+    Log.v(TAG,  user.getUsername());
     final AlertDialog.Builder alertDialogBuilder = new AlertDialog.Builder(this);
 
     final ProgressDialog dia = ProgressDialog.show(this, null,

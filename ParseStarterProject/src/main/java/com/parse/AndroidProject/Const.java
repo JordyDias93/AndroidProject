@@ -1,4 +1,4 @@
-package com.parse.starter;
+package com.parse.AndroidProject;
 
 /**
  * Created by Dr.Dias on 10/12/2015.
